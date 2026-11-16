@@ -1,0 +1,22 @@
+# Agent-facing workspace: local only, never uploaded (English-only content)
+ai/
+
+# Third-party source (keep index)
+refs/*
+!refs/INDEX.md
+
+# Regenerable
+data/
+artifacts/
+
+# Secrets and env
+.env
+.env.*
+!.env.example
+!infra/env/.env.example
+
+# Language-specific
+.venv/
+__pycache__/
+node_modules/
+.DS_Store
